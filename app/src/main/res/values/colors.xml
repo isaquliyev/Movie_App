@@ -5,5 +5,8 @@
 
     <color name="backgroundColor">#FF171725</color>
     <color name="bgColorForText">#FF1F1D2B</color>
-    <color name="textColor">#FF92929D</color>
+    <color name="gray">#FF92929D</color>
+
+    <color name="blue">#FF12CDD9</color>
+
 </resources>
