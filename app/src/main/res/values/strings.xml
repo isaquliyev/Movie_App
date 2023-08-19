@@ -5,5 +5,14 @@
 
     <string name="loremIpsum">Lorem ipsum dolor sit amet consecteur esplicit</string>
     <string name="description">Semper in cursus magna et eu varius nunc adipiscing. Elementum justo, laoreet id sem semper parturient. </string>
+    <string name="black_panther_wakanda_forever">Black Panther: Wakanda Forever</string>
+    <string name="on_march_2_2022">On March 2, 2022</string>
+    <string name="spider_man_no">Spider-Man No..</string>
+    <string name="action">Action</string>
+    <string name="all">All</string>
+    <string name="search_a_title">Search a title..</string>
+    <string name="today">Today</string>
+    <string name="premium">Premium</string>
+    <string name="spider_man_no_way">Spider-Man No Way..</string>
 
 </resources>

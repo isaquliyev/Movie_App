@@ -9,4 +9,7 @@
 
     <color name="blue">#FF12CDD9</color>
 
+    <color name="primary_soft">#252836</color>
+    <color name="orange">#FF8700</color>
+
 </resources>
