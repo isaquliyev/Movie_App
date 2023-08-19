@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/nav_graph"
+app:startDestination="@id/home_fragment">
+
+<fragment
+    android:id="@+id/home_fragment"
+    android:name="com.isaquliyev.movieapp1508.ui.home.fragment.HomeFragment"
+    android:label="Dashboard"
+    tools:layout="@layout/fragment_home" >
+    <action
+        android:id="@+id/action_firstFragment_to_secondFragment"
+        app:destination="@id/search_fragment" />
+</fragment>
+<fragment
+    android:id="@+id/search_fragment"
+    android:name="com.isaquliyev.movieapp1508.ui.home.fragment.SearchFragment"
+    android:label="Leaderboard"
+    tools:layout="@layout/fragment_search" >
+    <action
+        android:id="@+id/action_secondFragment_to_thirdFragment"
+        app:destination="@id/download_fragment" />
+</fragment>
+<fragment
+    android:id="@+id/download_fragment"
+    android:name="com.isaquliyev.movieapp1508.ui.home.fragment.DownloadFragment"
+    android:label="Store"
+    tools:layout="@layout/fragment_download" >
+    <action
+        android:id="@+id/action_thirdFragment_to_fourthFragment"
+        app:destination="@id/profile_fragment" />
+</fragment>
+<fragment
+    android:id="@+id/profile_fragment"
+    android:name="com.isaquliyev.movieapp1508.ui.home.fragment.ProfileFragment"
+    android:label="Profile"
+    tools:layout="@layout/fragment_profile" />
+</navigation>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.OnboardingElement2"
+    tools:context=".ui.onboarding.fragment.OnboardingElement2"
     android:background="@color/backgroundColor">
 
 
@@ -44,5 +44,33 @@
         android:src="@drawable/photo_end"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_56"
+        android:layout_marginRight="@dimen/d_56"
+        android:letterSpacing="0.12"
+        android:text="@string/loremIpsum"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/s_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="@dimen/d_14"
+        android:letterSpacing="0.12"
+        android:textColor="@color/gray"
+        android:textAlignment="center"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
