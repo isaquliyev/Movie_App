@@ -1,14 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.fragment.SearchFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.fragment.SearchFragment"
+    android:background="@color/backgroundColor">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginHorizontal="24dp"
+        android:background="@drawable/input"
+        android:drawableStart="@drawable/search_plaintext"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="@string/search_a_title"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:id="@+id/categories"
+        app:layout_constraintTop_toBottomOf="@id/editTextText"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"/>
 
-</FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/todayText"
+        app:layout_constraintTop_toBottomOf="@id/categories"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/today"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="25dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/poster"
+        android:background="@drawable/spiderman"
+        app:layout_constraintTop_toBottomOf="@id/todayText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rate_back"
+        app:layout_constraintTop_toBottomOf="@id/todayText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/star"
+        android:src="@drawable/star"
+        app:layout_constraintTop_toBottomOf="@id/todayText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate"
+        android:text="4.5"
+        android:textSize="12sp"
+        android:textColor="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/todayText"
+        app:layout_constraintLeft_toRightOf="@id/star"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/premium"
+        android:background="@drawable/premium_back"
+        app:layout_constraintTop_toBottomOf="@id/todayText"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/premium"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="@string/spider_man_no_way"
+        app:layout_constraintTop_toBottomOf="@id/premium"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        android:text="2021"
+        android:textColor="@color/gray"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        app:drawableStartCompat="@drawable/calendar"
+        android:drawablePadding="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
